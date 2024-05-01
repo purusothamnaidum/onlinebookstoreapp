@@ -33,11 +33,11 @@
       <distributionManagement>
         <snapshotRepository>
             <id>nexus-snapshots</id>
-            <url>http://3.82.25.62:8081/repository/maven-snapshots/</url>
+            <url>http://192.168.0.109:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>nexus-releases</id>
-            <url>http://3.82.25.62:8081/repository/maven-releases/</url>
+            <url>http://192.168.0.109:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 
@@ -62,7 +62,7 @@
         </profile>
     </profiles>
 <scm>
-    <connection>scm:git:https://github.com/kalyanreddyc/first-demo.git</connection>
+    <connection>scm:git:https://github.com/kalyanreddyc/onlinebookstoreapp.git</connection>
     <tag>HEAD</tag>
   </scm>
 	
