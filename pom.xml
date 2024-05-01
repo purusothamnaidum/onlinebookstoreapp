@@ -25,10 +25,47 @@
       <plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
-	<version>YOUR_VERSION</version>
+	<version>3.7.0.1746</version>
       </plugin>
     </plugins>
   </build>
+
+      <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://3.82.25.62:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://3.82.25.62:8081/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+
+        <profiles>
+        <profile>
+            <id>snapshot</id>
+            <activation>
+                <property>
+                    <name>env.BUILD_TYPE</name>
+                    <value>SNAPSHOT</value>
+                </property>
+            </activation>
+        </profile>
+        <profile>
+            <id>release</id>
+            <activation>
+                <property>
+                    <name>env.BUILD_TYPE</name>
+                    <value>RELEASE</value>
+                </property>
+            </activation>
+        </profile>
+    </profiles>
+<scm>
+    <connection>scm:git:https://github.com/kalyanreddyc/first-demo.git</connection>
+    <tag>HEAD</tag>
+  </scm>
+	
   <dependencies>
   	
   	<dependency>
