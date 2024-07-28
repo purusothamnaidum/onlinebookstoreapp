@@ -12,3 +12,5 @@ EXPOSE 8080
 
 # Start Tomcat server
 CMD ["catalina.sh", "run"]
+
+##Access http://<ip>:<expose-port>/onlinebookstore-0.0.1-SNAPSHOT/
