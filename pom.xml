@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>onlinebookstore</groupId>
   <artifactId>onlinebookstore</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.2</version>
   <packaging>war</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -33,11 +33,11 @@
       <distributionManagement>
         <snapshotRepository>
             <id>nexus-snapshots</id>
-            <url>http://54.174.131.120:8081/repository/maven-snapshots/</url>
+            <url>http://107.20.76.58:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>nexus-releases</id>
-            <url>http://54.174.131.120:8081/repository/maven-releases/</url>
+            <url>http://107.20.76.58:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 
