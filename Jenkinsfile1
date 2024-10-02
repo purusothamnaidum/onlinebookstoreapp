@@ -1,6 +1,9 @@
 @Library('drilldevops-sharedlibrary@test') _
 pipeline {
   agent any
+  environment {
+    REPOSITORY = "https://github.com/kalyanreddyc/onlinebookstoreapp.git"
+  }
   stages {
     stage('Checkout') {
       steps {
