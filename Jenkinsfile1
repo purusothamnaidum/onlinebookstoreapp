@@ -3,7 +3,8 @@ pipeline {
   agent any
   environment {
     REPOSITORY = "https://github.com/kalyanreddyc/onlinebookstoreapp.git"
-  }
+    CREDENTIALS_ID = '636c6341-3a7a-491c-a744-67bf8769c54d'
+   }
   stages {
     stage('Checkout') {
       steps {
