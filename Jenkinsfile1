@@ -1,0 +1,18 @@
+@Library('drilldevops-sharedlibrary@test') _
+pipeline {
+  agent any
+  stages {
+    stage('Checkout') {
+      steps {
+        script {
+          def checkedOutBranch = checkBranch_demo()
+          gitCheckoutrepo(
+            repository: REPOSITORY,
+            credentialsId: CREDENTIALS_ID,
+            branch: checkedOutBranch
+          )
+        }
+      }
+    }
+  }
+}
