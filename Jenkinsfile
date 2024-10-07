@@ -5,7 +5,7 @@ pipeline {
         maven "MAVEN_HOME"
     }
     environment {
-        REPOSITORY = 'https://github.com/kalyanreddyc/onlinebookstoreapp.git'
+        REPOSITORY = 'https://github.com/purusothamnaidum/onlinebookstoreapp.git'
         CREDENTIALS_ID = '636c6341-3a7a-491c-a744-67bf8769c54d'
         DOCKER_PATH = '/usr/local/bin'
         PATH = "${env.PATH}:${env.DOCKER_PATH}" // Properly set the PATH to include Docker
